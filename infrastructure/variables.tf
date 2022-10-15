@@ -70,9 +70,11 @@ variable "datadog_api_key" {
   type        = string
   description = "API Key for Datadog"
   sensitive   = true
+  default     = null
 }
 
 variable "datadog_region" {
   type        = string
   description = "Region for Datadog"
+  default     = null
 }
