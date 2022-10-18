@@ -1,6 +1,12 @@
 terraform {
   required_version = "~> 1.0"
 
+  cloud {
+    workspaces {
+      name = "consul-setup"
+    }
+  }
+
   required_providers {
     kubernetes = {
       source  = "hashicorp/kubernetes"

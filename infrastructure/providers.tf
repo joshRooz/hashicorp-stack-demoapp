@@ -1,6 +1,12 @@
 terraform {
   required_version = "~> 1.0"
 
+  cloud {
+    workspaces {
+      name = "infrastructure"
+    }
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
